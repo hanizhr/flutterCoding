@@ -52,6 +52,8 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    buildToolsVersion "30.0.3"
 }
 
 flutter {
