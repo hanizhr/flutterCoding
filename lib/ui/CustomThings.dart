@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../model/movies.dart';
 import '../model/question.dart';
 import '../movie_ui/movies_ui.dart';

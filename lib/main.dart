@@ -1,8 +1,11 @@
-//import 'dart:html';
 
+import 'package:first_flutter_app/map/lefletmap.dart';
 import 'package:flutter/material.dart';
-
+import 'map/quakes_map_app/quakes_app.dart';
+import 'parsing_json/json_parsing_map.dart';
+import 'parsing_json/jsonparsing.dart';
 import 'ui/CustomThings.dart';
+import 'weather_forecast/weather_forcast.dart';
 
 final ThemeData _appthem = _buildappthem();
 
@@ -26,7 +29,6 @@ ThemeData _buildappthem() {
    // textTheme: _appTextTheme(base.textTheme),
   );
 }
-
 // TextTheme _appTextTheme(TextTheme base) {
 //   return base.copyWith(
 //     headlineMedium: base.headlineMedium?.copyWith(
@@ -49,16 +51,17 @@ ThemeData _buildappthem() {
 
 //void main() => runApp(Home());
 void main() => runApp(MaterialApp(
-  theme: _appthem,
-      // theme: ThemeData(
-      //     brightness: Brightness.dark,
-      //     // primaryColor: Colors.orange[900],
-      //     textTheme: TextTheme(
-      //         headlineMedium:
-      //             TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
-      //         bodyMedium: TextStyle(
-      //             fontSize: 24,
-      //             fontWeight: FontWeight.bold,
-      //             color: Colors.orange))),
-      home: question(),
+  //theme: _appthem,
+  //     theme: ThemeData(
+  //         brightness: Brightness.dark,
+  //         // primaryColor: Colors.orange[900],
+  //         textTheme: TextTheme(
+  //             headlineMedium:
+  //                 TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+  //             bodyMedium: TextStyle(
+  //                 fontSize: 24,
+  //                 fontWeight: FontWeight.bold,
+  //                 color: Colors.orange))),
+      //home: WeatherForecast(),
+  home: QuakesApp(),
     ));
